@@ -34,13 +34,13 @@ public class Jogador extends Thread {
 		if(ContadorVitorias < 4) {
 			switch(ContadorVitorias) {
 			case 1:
-				System.out.println("Jogador #" + numeroThread + " ficou em primeiro e ganhou 5000 reais! Tempo = " + (fim - inicio) + " millisegundos");
+				System.out.println("Jogador #" + numeroThread + " ficou em primeiro e ganhou 5000 reais!");
 				break;
 			case 2:
-				System.out.println("Jogador #" + numeroThread + " ficou em segundo e ganhou 4000 reais! Tempo = " + (fim - inicio) + " millisegundos");
+				System.out.println("Jogador #" + numeroThread + " ficou em segundo e ganhou 4000 reais!");
 				break;
 			case 3:
-				System.out.println("Jogador #" + numeroThread + " ficou em terceiro e ganhou 3000 reais! Tempo = " + (fim - inicio) + " millisegundos");
+				System.out.println("Jogador #" + numeroThread + " ficou em terceiro e ganhou 3000 reais!");
 				break;
 			}
 			
@@ -52,6 +52,6 @@ public class Jogador extends Thread {
 	
 	
 	
-	//Preciso fazer de uma forma que eu saiba quem terminou primeiro
+	
 	
 
