@@ -3,19 +3,19 @@ package Controller;
 import java.util.Random;
 
 public class Jogador extends Thread {
-	static int ContadorVitorias;
+	private static int ContadorVitorias;
 	private int dado1, dado2, numeroThread, numeroVencedores;
 	Random aleatorio = new Random();
-	
+
 	public Jogador(int numeroThread) {
 		start();
 		this.numeroThread = numeroThread;
 	}
-	
+
 	public void run() {
 		checaDados();
 	}
-	
+
 	public void checaDados() {
 		int pontoGanho = 0;
 		do {
@@ -43,15 +43,15 @@ public class Jogador extends Thread {
 				System.out.println("Jogador #" + numeroThread + " ficou em terceiro e ganhou 3000 reais!");
 				break;
 			}
-			
+
 		}
-		
+
 	}
-	}
-	
-	
-	
-	
-	
-	
+}
+
+
+
+
+
+
 
